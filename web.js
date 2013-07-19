@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
-var fs = require('js');
+var fs = require('fs');
 var msg = fs.readFileSync("index.html", "utf8");
 
 app.get('/', function(request, response) {
